@@ -66,4 +66,55 @@
 </div>
   </div>
 </section>
+<!--map-->
+<style>
+  #map {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+  }
+</style>
+<section class="py-5">
+  <div class="container text-center">
+    
+    
+    <div class="row d-flex justify-content-center">
+    
+      <div class="col-9" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Map</h5>
+            <div class="container my-5">
+    <h2 class="text-center mb-4">Location Map</h2>
+    <div id="map"></div>
+</div>
+
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!-- Google Maps API 22.226388612797532, 70.80112123788679 -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw9xZ_pAOU3AP0W3XzOZDlbtiitPfyni0-KEY&callback=initMap"
+ async defer></script>
+
+<script>
+    function initMap() {
+        // Change latitude and longitude to your location
+        const location = { lat: 22.226388612797532, lng: 70.80112123788679 }; // Example: Rajkot, Gujarat
+
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 12,
+            center: location,
+        });
+
+        const marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            title: "Your Location",
+        });
+    }
+</script>
 @endsection
