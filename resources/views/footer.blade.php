@@ -8,11 +8,11 @@
       <div class="col-md-6 col-sm-6 mb-4">
         <h6 class="font-weight-bold">ABOUT Yesh Industries VALVES</h6>
         <ul class="list-unstyled">
-          <li><a href="#">About Us</a></li>
+          <li><a href="{{url('/aboutus')}}">About Us</a></li>
           <li><a href="#">Corporate Social Responsibility</a></li>
           <li><a href="#">Environmental Policy</a></li>
           <li><a href="#">Employment Opportunities</a></li>
-          <li><a href="#">Contact Yesh Industries</a></li>
+          <li><a href="{{url('/contactus')}}">Contact Yesh Industries</a></li>
         </ul>
       </div>
 
@@ -23,9 +23,9 @@
         <p class="text-dark"><strong>Phone:</strong>+91 9375768870<br></p>
         <h6 class="font-weight-bold">Connect With Us</h6>
         <div class="social-icons">
-          <a href="#"><i class="fab fa-linkedin fa-lg mr-2"></i></a>
-          <a href="#"><i class="fab fa-facebook fa-lg mr-2"></i></a>
-          <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+          <a href="https://www.linkedin.com/in/yesh-industries-487899361/"><i class="fab fa-linkedin fa-lg mr-2"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61575604319981"><i class="fab fa-facebook fa-lg mr-2"></i></a>
+          <a href="https://www.instagram.com/yeshindustries/?hl=en"><i class="fab fa-youtube fa-lg"></i></a>
         </div>
       </div>
     </div>
